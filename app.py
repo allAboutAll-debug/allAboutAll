@@ -21,7 +21,7 @@ def send_text(message):
         keyboard = telebot.types.InlineKeyboardMarkup()
         key_create = telebot.types.InlineKeyboardButton(text='Добавить подписку', callback_data='create', url= 'https://google.com')
         keyboard.add(key_create)
-        key_manage = telebot.types.InlineKeyboardButton(text='Управление подписками', callback_data='manage', url= 'https://google.com')
+        key_manage = telebot.types.InlineKeyboardButton(text='Управление подписками', callback_data='manage', url= 'http://aboutbetweenall.000webhostapp.com/?t_id=' + str(message.from_user.id))
         keyboard.add(key_manage)
         bot.send_message(message.from_user.id, text=text, reply_markup=keyboard)
 
