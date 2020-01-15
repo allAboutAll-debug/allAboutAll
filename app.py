@@ -17,7 +17,6 @@ def send_text(message):
 
 
         # url = 'http://aboutbetweenall.000webhostapp.com/api/user/create.php'
-        #
         # payload = {
         #     'telegram_id': message.from_user.id,
         #     'first_name': message.from_user.first_name
